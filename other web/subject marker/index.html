@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="intro">
+           <h1>student result maker</h1>
+        </div>
+        <div class="from">
+           <div class="mathe">
+            <input type="text" placeholder="mathematic" id="math">
+            </div>
+
+
+            <div class="bangla">
+                <input type="text" placeholder="bangla" id="bangla">
+                </div> 
+                
+                
+            <div class="english">
+            <input type="text" placeholder="english" id="english">
+            </div> 
+                    
+                    
+            <div class="computer">
+            <input type="text" placeholder="computer" id="computer">
+            </div> 
+
+            <button id="btn" onclick="sbmi()">submit</button>
+            <button id="btn2" onclick="sbmi()">refresh</button>
+
+        </div>
+
+
+        <h4 id="span"> </h4>
+
+
+    </div>
+
+ <script>
+     var math = document.getElementById("math");
+     var bangla = document.getElementById("bangla");
+     var english = document.getElementById("english");
+     var computer = document.getElementById("computer");
+     var span = document.getElementById("span");
+
+     var btn = document.getElementById("btn");
+     var btn2 = document.getElementById("btn2");
+
+     
+
+
+     btn.addEventListener("click" ,function(){
+
+         var total = parseFloat(math.value) + parseFloat(bangla.value) + parseFloat(english.value)+ parseFloat(computer.value) ;
+
+        
+
+          var pers = (total/400)*100 ;
+
+        
+
+          if(pers<=100 && pers>= 80){
+              var gred = "'A'";
+              var pass = "you are pass"
+
+          }
+          else if(pers <=79 && pers >=60){
+              var gred = "'B'";
+              var pass = "you are pass"
+          }
+          else if(pers <=69 && pers>=40){
+              var gred = "'C'";
+              var pass = "you are pass"
+
+
+          }
+
+          else{
+              var gred = "'F'";
+              var pass = "you are fail"
+          }
+         
+         
+
+            span.innerText = "your total marks  " + total +"  prsentige  " + pers.toFixed(0)+"%" +  '  '+ "  gred " + gred + " . " + pass +"."
+
+           })
+
+  
+        //    if(math.value === ""){
+        //      span.innerText="enter matehmatics number."
+        //   }
+        //   else if (bangla.value === ""){
+        //       span.innerText ="enter matehmatics number."
+        //   }
+        //   else if (english.value=== ""){
+        //     span.innerText ="enter matehmatics number."
+        //   }
+
+        //   else if (computer.value === ""){
+        //     span.innerText ="enter matehmatics number."
+        //   }
+        //   else{
+              
+
+     
+     btn2.addEventListener("click",function(){
+         math.value = ""
+         bangla.value=""
+         english.value=""
+         computer.value=""
+         span.innerText = ""
+
+     })
+
+     
+        
+
+     
+
+
+    </script>
+</body>
+</html>

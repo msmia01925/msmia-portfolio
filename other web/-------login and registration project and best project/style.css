@@ -1,0 +1,476 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+.main-conteiner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/abstract-colorful-triangles-background-loop-dynamic-geometric-moving-pattern-red-blue-yellow-violet-color-scheme-k-ultra-hd-87358321.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    overflow: hidden;
+}
+.flex-conteiner{
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    overflow:hidden;
+    
+    
+}
+
+.sign-in-section{
+    height: 90%;
+    width:400px;
+    background-color: rgba(0, 123, 255, 0.764);
+    padding: 50px 25px;
+    border-radius: 15px;
+    position: relative;
+    left:200px;
+    /* position: absolute;
+    left: 70%; */
+    
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: 1s;
+
+}
+.sign-in h3{
+   text-align: center;
+   color: #fff;
+   font-size: 25px;
+   margin-bottom: 20px;
+
+}
+.fa{
+    margin-right:5px ;
+    border: 2px solid #fff;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.email-section{
+     margin-bottom: 15px;
+}
+.email-section p{
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.email{
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius:5px;
+    background-color:rgba(189, 211, 236, 0.437) ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    font-size: 15px;
+}
+.pass{
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius:5px ;
+    background-color:rgba(189, 211, 236, 0.437) ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    font-size: 15px;
+    
+}
+.password-section{
+    margin-bottom: 15px;
+
+}
+.password-flex{
+    display: flex;
+}
+.eye-sec{
+    margin-left: -25px;
+    margin-top: 5px;
+    display: flex;
+    
+}
+#eye{
+    font-size: 15px;
+    margin-left: 0px;
+    cursor: pointer;
+    
+}
+#hide-eye{
+    
+    display: none;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+.password-section p{
+   color: #fff;
+   font-size: 12px;
+   margin-bottom: 3px;
+
+}  
+input::placeholder{
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgba(255, 254, 254, 0.453);
+}
+
+.pass{
+    margin-bottom: 10px;
+}
+.forget-pass{
+    font-size: 13px;
+   display: flex;
+   float:right;
+   
+   
+}
+.check-box{
+    margin-top: 25px;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn1{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 34px;
+    transition: 0.5s;
+    height: 40px;
+    width: 170px;
+    background: none;
+    font-size: 25px;
+    color: lightblue;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'poopines';
+
+}
+.btn1:hover{
+    background: lightblue;
+    color: black;
+    box-shadow: 0px 0px 40px rgb(4, 190, 187);
+
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+.with{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.sign-up{
+    position: absolute;
+    left:80px;
+    bottom: 10px;
+    text-align: center;
+}
+.sign-in-btn{
+    font-size: 40px
+}
+.sign-up p{
+    font-size: 19px;
+    color: #fff;
+    font-family: 'poopins';
+}
+.last-1{
+    position: absolute;
+    left:80px;
+    bottom: 10px;
+    text-align: center;
+}
+.last-1 p{
+    font-size: 19px;
+    color: #fff;
+    font-family: 'poopins';
+}
+
+
+
+/* -------------------sign-up-sectio------------------- */
+
+
+.sign-up-section{
+    position:relative;
+ 
+    right:-450px;
+    height: 100%;
+    width: 400px;
+    background-color: rgba(0, 123, 255, 0.764);
+    padding: 20px 25px;
+    border-radius: 15px;   
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 1s;
+}
+.sign-up-section h3{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+ 
+}
+.pass-1{
+    height: 28px;
+    width: 100%;
+    border: none;
+    border-radius:5px;
+    background-color:rgba(189, 211, 236, 0.437) ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    font-size: 12px;
+}
+.pass-1::placeholder{
+    margin-left: 20px;
+    font-size: 13px;
+    color: rgba(255, 254, 254, 0.453);
+}
+.btn1-res{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    transition: 0.5s;
+    height: 30px;
+    width: 170px;
+    background: none;
+    font-size: 20px;
+    color: lightblue;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'poopines';
+
+}
+
+.btn1-res:hover{
+    background: lightblue;
+    color: black;
+    box-shadow: 0px 0px 40px rgb(4, 190, 187);
+
+}
+
+.or-reg{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 650;
+}
+.icon{
+    text-align: center;
+}
+.icon i{
+    margin-left: 5px;
+    font-size:25px;
+    margin-top: 5px;
+    cursor: pointer;
+    color:rgb(10, 253, 249) ;
+}
+a{
+    color: rgb(25, 0, 254);
+    background-color:   rgba(0, 123, 255, 0.711);
+    padding: 3px 5px;
+    border-radius: 10px;
+
+}
+
+
+/* -------------------error massage section------------------- */
+
+.error{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.error h5{
+        color: rgb(67, 238, 232);
+        font-size: 15px;
+        font-family: 'poopines';
+}
+/* .second-section{
+
+} */
+
+
+header{
+    height: 250px;
+    width: 400px;
+    background-color: rgba(0, 123, 255, 0.764) ;
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: -80%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+   
+    
+}
+header #a {
+    font-size: 52px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+header .b{
+     font-size: 20px;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+}
+header .c{
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+
+/* -------media query for resposive------------ */
+/* @media only screen and (max-width: 700px){
+    .main-conteiner{
+        height: 200vh;
+        width: 100vh;
+        background: orange;
+    }
+    .sign-in-section{
+        height: 65vh;
+        width: 100%;
+    }
+
+} */
+/* ---------------------for dark section-------------- */
+.for-dark-section{
+    /* height: 100px;
+    width: 150px; */
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 1s;
+    overflow: visible;
+   
+    display: flex;
+}   
+.for-dark-section .icon{
+
+   
+    
+    cursor: pointer;
+    transition: 0.5s;
+   
+
+}
+
+.for-dark-section .color{
+   
+    position: relative;
+    top: -200px;
+    border-radius: 10px;
+   display: flex;
+   flex-direction: column;    
+    transition: 1s;
+
+}
+.for-dark-section .color.active{
+    top: 20px;
+}
+.for-dark-section .icon .fa-gear{
+    color: #fff;
+    animation: rotate 2s infinite linear ;
+    position: relative;
+    background-color: rgba(0, 123, 255, 0.764);
+    padding: 10px 10px;
+    border-radius: 50%;
+    
+   
+}
+.for-dark-section .icon .fa-gear:hover{
+     color: rgb(0, 247, 218);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.for-dark-section .color .fa-moon {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px 5px;
+    background-color: rgba(0, 123, 255, 0.764);
+    border-radius: 50%;
+}
+.for-dark-section .color .fa-sun{
+    color: rgba(32, 42, 44, 0.74);
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px 5px ;
+    background-color: rgba(0, 123, 255, 0.764) ;
+    border-radius: 50%;
+}
+@media only screen and (max-width :700px) {
+    .for-dark-section{
+        top: 5px;
+        right: 7px;
+        
+    }
+    .for-dark-section .icon{
+        height: 40px;
+        width: 40px;
+        
+    }
+    .for-dark-section .icon .fa-gear{
+        font-size: 14px;
+    }
+    .for-dark-section .color{
+        flex-direction: row;
+    }
+    .for-dark-section .color .fa-moon {
+        margin-top: 0px;
+    }
+    .for-dark-section .color .fa-sun{
+        margin-top: 0%;
+    }
+   
+}

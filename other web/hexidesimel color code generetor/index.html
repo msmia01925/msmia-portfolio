@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rendom background color changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="conteiner" id ="conteiner">
+
+       <div class="main">
+        <h1>this is landing page who can do her color change...</h1>
+         </div> 
+        <input type="text" placeholder="#000000" id="input">
+        <button id ="copy-btn" title="copy on cilpboard">copy</button>
+       <div class="copytext"> 
+        <h3 id="ptext"></h3><br>
+      </div>
+        <button class="btn" id="btn">cilck hear for change color</button>
+      
+
+    </div>
+    
+
+     <script>
+       function randomcolor(){
+          var  color1 = Math.floor(Math.random()*255)
+          var     color2 = Math.floor(Math.random()*255)
+          var      color3 = Math.floor(Math.random()*255)
+        
+         
+          return `#${color1.toString(16)}${color2.toString(16)}${color3.toString(16)}`
+
+       }
+       var btn = document.getElementById("btn");
+
+       btn.addEventListener("click",function(){
+        var input = document.getElementById("input");
+         var body = document.getElementById("body");
+
+          body.style.backgroundColor = randomcolor()
+
+          input.value = randomcolor()
+
+          ptext.innerHTML = ""
+        
+       })
+       var copy_btn =document.getElementById("copy-btn")
+       var ptext = document.getElementById("ptext")
+
+
+       copy_btn.addEventListener("click",function(){
+
+         navigator.clipboard.writeText(input.value)
+      
+         if (input.value ==""){
+           ptext.innerHTML="please select color"
+         }
+         else{
+          ptext.innerHTML =input.value +" "+ "color copyed"
+         }
+         
+       })
+
+       input.addEventListener("keyup",function(){
+         body.style.backgroundColor = input.value
+       })
+       
+
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="conteiner" id="conteiner">
+        <div class="main-box" >
+            <div class="header">
+                <h3>Display Color</h3>
+                <button id="random-color-button">Random Color</button>
+            </div>
+            <div class="color-box" id="color-box">
+                  <p id = "copymassege"></p>
+            </div>
+            <div class="header-2">
+               <div class="main-header">
+                        <h3>Change & Copy Color</h3>
+                        <button id = "copybutton">Copy To Cilpboard</button>
+               </div>
+                <div class="select-color">
+                      <div class="ptext">
+                         <p>Select Color Code</p> 
+                      </div>
+                      <div class="select-box">
+                                <div class="hex-code">
+                                    <input type="checkbox" class ="chack-box-1">Hax--
+                                </div>
+                                <div class="rgb-code">
+                                    <input type="checkbox" id="forrgbcode" class ="chack-box-2">Rgb--
+                                </div>
+                      </div>
+                </div>
+
+              <div class="input-hax-rgb">
+                  <div class="hex-input-text">
+                      <h4>Hex</h3>
+                      <input type="text" class="haxinput" id="hax-input-text"
+                      placeholder="#FFF555">
+                  </div>
+                  <div class="rgb-input-text" >
+                      <h4>Rgb</h3>
+                    <input type="text" class="rgbinput" id ="rgb-input-text" placeholder="RGB(222,555,666)">
+                </div>
+              </div> 
+              
+              <div class="last-box">
+                  <p>Adjust RGB Color</p>
+
+                  <div class="adjust-slider">
+
+
+                     <div class="color-slider-box1">
+                         <div class="red-number">
+                            <h5>Red</h5>
+                            <h5>222</h5>
+                         </div>  
+                            <input type="range" min="0" max="255" value="221" class="color-slider-red" >
+                      </div> 
+
+
+                      <div class="color-slider-box2">
+                        <div class="green-number">
+                            <h5>Green</h5>
+                            <h5>222</h5>
+                         </div> 
+                            <input type="range" min="0" max="255" value="221" class="color-slider-green" >
+                      </div>
+
+                      <div class="color-slider-box3">
+                        <div class="blue-number">
+                            <h5>Blue</h5>
+                            <h5>222</h5>
+                         </div> 
+                                                        <input type="range" min="0" max="255" value="221" class="color-slider-blue" >
+                      </div>
+                  </div>
+              </div>
+
+
+
+            </div>
+
+
+            <div class="manual-color-selector">
+                <div class="header-manual">
+                    <h4>manualy select color</h4>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

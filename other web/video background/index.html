@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navber slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="conteiner">
+             
+        <video autoplay loop muted class="back-video">
+            <source src="video.mp4" type="video/mp4">
+       </video>
+        <div class="main">
+            <i class="fa-solid fa-align-justify" id="btn"></i>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i>home</a></li>
+                <li><a href="#"> <i class="fa-solid fa-address-card"></i>about</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-person"></i>clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-house-medical"></i>fasility</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <h2>Simple navber and backgruond video</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam, quaerat animi quia ducimus ipsam est officia cum, ullam alias iure sunt exercitationem! Hic ullam repudiandae reprehenderit laboriosam error. Impedit?</p>
+        </div>
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var nav = document.getElementById("nav");
+
+        btn.onclick = () =>{
+            nav.classList.toggle("active")
+            
+        }
+    </script>
+    
+</body>
+</html>

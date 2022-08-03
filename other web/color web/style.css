@@ -1,0 +1,179 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.conteiner{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 241, 241);
+
+}
+.main-box{
+    height: 75vh;
+    width: 65vh;
+    background-color: rgba(192, 177, 177, 0.824);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    padding: 10px 16px 10px 16px ;
+    box-shadow: inset 4px 2px 7px #fff   ;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    
+
+}
+.header h3{
+    font-size: 18px;
+    color: rgb(4, 234, 255);
+}
+#random-color-button{
+    height: 23px;
+    width: 100px;
+    background-color: rgba(65, 65, 197, 0.575);
+    transition: 0.5s;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+.header h4:hover{
+     color: rgb(4, 234, 255);
+     font-size: 18px;
+}
+.color-box{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(231, 240, 134, 0.567);
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+
+}
+#copymassege{
+    position: relative;
+    
+    text-shadow: 1px 1px 5px #fff,2px 2px 5px red;
+    
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.header-2 h3{
+    color: rgb(4, 234, 255);
+    transition: 0.5s;
+
+}
+.header-2 h3:hover{
+    color: black;
+}
+.header-2 button{
+    background-color: rgb(20, 169, 223);
+    height: 5vh;
+    width: 23vh;
+    border: none;
+    color: #fff;
+    border-radius: 0px 12px 0px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+
+
+}
+.header-2 button:hover{
+    background-color: #fff;
+    color:rgb(20, 169, 223) ;
+}
+.select-color{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 8px;
+}
+.select-box{
+    display: flex;
+
+}
+.ptext{
+    color: #fff;
+}
+.hex-code{
+    margin-right:5px ;
+    color: blue;
+
+}
+.rgb-code{
+    margin-right: 10px;
+    color: rgb(124, 248, 15);
+    border-left: 2px solid black;
+    padding-left: 3px;
+}
+.input-hax-rgb{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+}
+.haxinput{
+     height: 5vh;
+     width: 30vh;
+     background-color:rgba(192, 177, 177, 0.824) ;
+     border: 1px solid #fff;
+     
+}
+.rgbinput{
+    height: 5vh;
+    width: 30vh;
+    background-color:rgba(192, 177, 177, 0.824) ;
+    border: 1px solid #fff;
+    
+}
+.last-box{
+    margin-top: 19px;
+}
+.adjust-slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.color-slider-red{
+     width: 110px;
+}
+.color-slider-green{
+    width: 110px;
+    
+}
+.color-slider-blue{
+    width: 110px;
+}
+.red-number {
+    display: flex;
+    justify-content: space-between;
+}
+.green-number {
+    display: flex;
+    justify-content: space-between;
+}
+.blue-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ----------manual section---------- */
+
+.manual-color-selector{
+      padding: 15px;
+      text-align: center;
+    
+}

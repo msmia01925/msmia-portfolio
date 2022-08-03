@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new mobile info app</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+<body>
+<section>
+       <nav>
+           <div class="logo">
+              <h3><i class="fa-solid fa-mobile-screen"></i> MOBILE HOME</h3>
+           </div>
+           <div class="link">
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Phone</a></li>
+                   <li><a href="#">Accessories</a></li>
+                   <li><a href="#">Cart</a></li>
+                   
+                   
+               </ul>
+           </div>
+       </nav>
+
+
+
+
+       <div class="information">
+            <div class="leftside">
+
+                
+                 <div id="circle">
+                        
+                        
+                        <div class="feature one">
+                            <img src="img/cm.jpg">
+                            <div>
+                                <h2>Camera</h2>
+                                <p>12mp font Camera and <br/>32mp back Camera</p>
+                            </div>
+                        </div>
+                        <div class="feature two">
+                            <img src="img/bt.jpg">
+                            <div>
+                                <h2>Camera</h2>
+                                <p>12mp font Camera and <br/>32mp back Camera</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="feature three">
+                            <img src="img/cm.jpg">
+                            <div>
+                                <h2>Camera</h2>
+                                <p>12mp font Camera and <br/>32mp back Camera</p>
+                            </div>
+                        </div>
+                        <div class="feature four">
+                            <img src="img/bt.jpg">
+                            <div>
+                                <h2>Camera</h2>
+                                <p>12mp font Camera and <br/>32mp back Camera</p>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>    
+         </div>
+    <div class="phone-img">
+        <img src="img/samsung-mobile-free-download-transparent-4.png">
+    </div>
+
+           
+
+
+                    <div class="right-side"> 
+            
+                        <i class="fa-solid fa-angle-up" id="up"></i>
+                        <h3>features</h3>
+                        <i class="fa-solid fa-angle-down" id="down"></i>
+                    </div>                             
+                                        
+                
+
+
+
+         
+
+</section>
+
+
+<script>
+    var up_key = document.getElementById("up")
+    var down_key = document.getElementById("down")
+    var circle = document.getElementById("circle")
+    
+    var rotatevalue = circle.style.transform;
+    var rotatesum;
+
+    up_key.onclick = function() {
+         rotatesum = rotatevalue + "rotate(-90deg)";
+         circle.style.transform = rotatesum;
+         rotatevalue = rotatesum
+    }
+    
+    down_key.onclick = function(){
+        rotatesum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum
+    }
+
+
+
+
+</script>
+</body>
+</html>
